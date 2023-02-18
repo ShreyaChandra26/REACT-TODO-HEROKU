@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const apiURL = "https://one0x-node-todo-api.onrender.com/api/todo";
+const apiURL = "https://one0x-shreya-node-todo-api.onrender.com/api/todo";
+
+
 
 export function getTasks() {
   return axios.get(apiURL + "s");
@@ -33,3 +35,4 @@ export async function updateTask(id, task) {
 export function deleteTask(id) {
   return axios.delete(apiURL + "/" + id + "/delete");
 }
+
